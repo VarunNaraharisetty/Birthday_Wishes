@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#21112f">
+  <meta name="description" content="A little interactive birthday surprise for Varshini (Boori).">
+  <title>For Varshini (Boori) ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="desktop-glow"></div>
+  <header class="site-head">
+    <a class="brand" href="#" aria-label="Birthday surprise"> <span>✿</span> Handmade Birthday</a>
+    <span class="header-caption">A LITTLE SURPRISE FOR YOU</span>
+  </header>
+
+  <main class="stage">
+    <div class="side-note left-note">MADE WITH LOVE <span>♡</span></div>
+    <article class="phone" aria-live="polite">
+      <div class="phone-top"><span class="tiny-brand">✿ Birthday Wishes</span><span class="tiny-counter" id="counter">01 / 08</span></div>
+      <div class="progress"><span id="progress"></span></div>
+
+      <section class="page active" data-page="0">
+        <p class="kicker">A LITTLE SOMETHING FOR YOU</p>
+        <h1>Our little<br><em>memory lane</em></h1>
+        <p class="sub">A few moments that make me smile every time.</p>
+        <div class="polaroid-wrap">
+          <span class="decor decor-heart">♡</span><span class="decor decor-star">✦</span>
+          <div class="polaroid" id="introPolaroid">
+            <img src="photo-2.jpg" alt="Varshini and a loved one" class="intro-photo">
+            <div class="polaroid-caption">always a favourite memory <span>♡</span></div>
+          </div>
+          <div class="mini-photo mini-photo-one"><img src="photo-3.jpg" alt="A happy memory"></div>
+          <div class="mini-photo mini-photo-two"><img src="photo-5.jpg" alt="A favorite moment"></div>
+        </div>
+        <p class="tiny-caption">A tiny page made just for you, Boori.</p>
+        <button class="cta" data-next>Come feel the feels <span>→</span></button>
+        <p class="bottom-hint">SCROLLING THROUGH OUR LITTLE WORLD <span>✧</span></p>
+      </section>
+
+      <section class="page" data-page="1">
+        <p class="kicker">01 — THE LITTLE THINGS</p>
+        <h2>Things I love about you</h2>
+        <p class="sub">A few things that make you, <em>you.</em></p>
+        <div class="love-card" id="loveCard">
+          <div class="love-art"><span class="love-glow"></span><span class="love-emoji" id="loveEmoji">🫶</span><span class="love-spark spark-one">✦</span><span class="love-spark spark-two">♡</span></div>
+          <p class="love-title" id="loveTitle">Your heart</p>
+          <p class="love-copy" id="loveCopy">The way you care for people, even in the smallest ways.</p>
+          <span class="card-count" id="loveCount">01 / 06</span>
+        </div>
+        <div class="dots" id="loveDots"><span class="selected"></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="button-row"><button class="pill-btn pale" id="lovePrev" aria-label="Previous reason">←</button><button class="pill-btn pink" id="loveNext">One more thing <span>→</span></button></div>
+        <p class="bottom-hint">THERE ARE SO MANY MORE <span>♡</span></p>
+      </section>
+
+      <section class="page" data-page="2">
+        <p class="kicker">02 — A FEW MORE REASONS</p>
+        <h2>Things I love about you</h2>
+        <p class="sub">Six little reminders, just in case you need them.</p>
+        <div class="reason-grid">
+          <button class="reason-tile"><span>☀</span><b>Your sunshine</b><small>You brighten ordinary days.</small></button>
+          <button class="reason-tile"><span>♡</span><b>Your kindness</b><small>You make people feel seen.</small></button>
+          <button class="reason-tile"><span>✧</span><b>Your laugh</b><small>It makes happiness contagious.</small></button>
+          <button class="reason-tile"><span>🌷</span><b>Your strength</b><small>You keep going, beautifully.</small></button>
+          <button class="reason-tile"><span>☁</span><b>Your softness</b><small>You make people feel at home.</small></button>
+          <button class="reason-tile"><span>💗</span><b>Your magic</b><small>There is nobody quite like you.</small></button>
+        </div>
+        <button class="cta" data-next>All this love, just for you <span>→</span></button>
+        <p class="bottom-hint">YOU ARE SO EASY TO CELEBRATE <span>✧</span></p>
+      </section>
+
+      <section class="page cake-page" data-page="3">
+        <p class="kicker">03 — YOUR BIRTHDAY WISH</p>
+        <h2>Blow out the candles</h2>
+        <p class="sub">Close your eyes for a second. Think of something wonderful.</p>
+        <button class="cake-scene" id="cakeButton" aria-label="Blow out the birthday candles">
+          <span class="cake-spark s-a">✧</span><span class="cake-spark s-b">♡</span>
+          <span class="candle c1"><i></i></span><span class="candle c2"><i></i></span><span class="candle c3"><i></i></span>
+          <span class="cake-top"></span><span class="cake-layer layer-top"></span><span class="cake-layer layer-mid"></span><span class="cake-layer layer-bottom"></span><span class="cake-plate"></span>
+        </button>
+        <p class="cake-hint" id="cakeHint">Tap the cake to blow them out ✨</p>
+        <div class="wish-reveal" id="wishReveal" hidden><b>You did it! ♡</b><span>May your wish find its way to you.</span></div>
+        <button class="cta" data-next>Make a wish, Boori <span>→</span></button>
+        <p class="bottom-hint">YOUR WISH IS SAFE WITH THE UNIVERSE <span>♡</span></p>
+      </section>
+
+      <section class="page" data-page="4">
+        <p class="kicker">04 — A WISH FOR YOU</p>
+        <h2>Make a wish, Varshini</h2>
+        <p class="sub">May this year bring you more reasons to smile.</p>
+        <div class="wish-illustration"><span class="wish-halo"></span><span class="wish-moon">☾</span><span class="wish-flower">✿</span><span class="wish-star ws1">✦</span><span class="wish-star ws2">✧</span><span class="wish-star ws3">✦</span></div>
+        <div class="wish-copy-card"><b>For your new year</b><p>More soft days, big laughs, unexpected adventures, and people who love you exactly as you are.</p></div>
+        <button class="cta" data-next>Send my wish <span>→</span></button>
+        <p class="bottom-hint">A LITTLE MAGIC IS ON ITS WAY <span>✧</span></p>
+      </section>
+
+      <section class="page" data-page="5">
+        <p class="kicker">05 — JUST FOR FUN</p>
+        <h2>One tiny challenge</h2>
+        <p class="sub">Can you give the screen a little love?</p>
+        <div class="challenge">
+          <div class="challenge-hearts" id="challengeHearts"><button aria-label="Send a heart">♡</button><button aria-label="Send a heart">♡</button><button aria-label="Send a heart">♡</button><button aria-label="Send a heart">♡</button><button aria-label="Send a heart">♡</button></div>
+          <p id="challengeText">Tap all five hearts to fill this page with love.</p>
+          <div class="challenge-meter"><span id="challengeMeter"></span></div>
+        </div>
+        <button class="cta" id="challengeContinue" disabled>Send all the love <span>→</span></button>
+        <p class="bottom-hint">NO PRESSURE, JUST HEARTS <span>♡</span></p>
+      </section>
+
+      <section class="page" data-page="6">
+        <p class="kicker">06 — ONE LAST THING</p>
+        <h2>A little note for you</h2>
+        <p class="sub">Some things are better said from the heart.</p>
+        <div class="envelope-wrap">
+          <button class="envelope" id="envelopeButton" aria-label="Open your birthday letter"><span class="envelope-flap"></span><span class="envelope-seal">♡</span><span class="envelope-label">for Boori</span></button>
+        </div>
+        <p class="envelope-hint" id="envelopeHint">Tap the envelope to open your letter.</p>
+        <div class="letter" id="letter" hidden>
+          <p>Dear Boori,</p>
+          <p>I hope this year is gentle with you and full of moments that remind you how loved you are. I hope you keep finding little reasons to laugh, big reasons to dream, and people who make life feel lighter.</p>
+          <p>Never forget how special you are. The world is a little brighter with you in it.</p>
+          <p class="signature">Happy Birthday, Varshini. <span>♡</span></p>
+        </div>
+        <button class="cta" data-next>Open your final surprise <span>→</span></button>
+        <p class="bottom-hint">MADE WITH A WHOLE LOT OF LOVE <span>✧</span></p>
+      </section>
+
+      <section class="page final-page" data-page="7">
+        <div class="final-stars" aria-hidden="true"></div>
+        <p class="final-kicker">TODAY IS ALL ABOUT YOU</p>
+        <div class="final-orbit"><span>✦</span><span>✧</span><span>♡</span></div>
+        <p class="final-small">HAPPY BIRTHDAY</p>
+        <h2>VARSHINI<br><em>(BOORI)</em></h2>
+        <div class="final-rule"><span>✧</span></div>
+        <p class="final-message">May your life be filled with love, laughter, and beautiful little surprises.</p>
+        <p class="final-love">You deserve all the good things. <span>♡</span></p>
+        <button class="final-replay" id="replayButton">↻ Relive the little moments</button>
+        <button class="final-confetti" id="confettiButton" aria-label="Celebrate">✦</button>
+      </section>
+    </article>
+    <div class="side-note right-note">YOUR DAY, YOUR MAGIC <span>✧</span></div>
+  </main>
+  <footer class="site-foot"><span>HANDCRAFTED WITH <b>♡</b></span><span>FOR VARSHINI (BOORI) · ALWAYS</span></footer>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
